@@ -1,0 +1,197 @@
+body {
+  margin: 0rem;
+}
+
+.root {
+  background-image: url(../assest/images/gif.webp);
+  background-position: center;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+.root .up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.root .up .left {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+}
+.root .up .left img {
+  width: 7.5rem;
+}
+.root .up .left a {
+  color: white;
+  text-shadow: 1px 1px 18px fuchsia;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.root .up .rigth {
+  display: grid;
+  height: 10rem;
+}
+.root .up .rigth img {
+  width: 5.5rem;
+}
+.root .up .rigth a {
+  color: white;
+  text-shadow: 1px 1px 18px fuchsia;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.root .Me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.root .Me img {
+  width: 12rem;
+  height: 12rem;
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 80%;
+  justify-content: center;
+  align-self: center;
+}
+.root .Me #meAboutMe {
+  color: white;
+  width: 20rem;
+  height: 10rem;
+  font-size: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  padding-top: 1rem;
+  display: none;
+  text-shadow: 1px 1px 18px rgba(0, 0, 255, 0.692);
+  flex-direction: column;
+}
+.root .Me #meAboutMe button {
+  border: 0;
+  height: 1.8rem;
+  width: 5.5rem;
+  background-color: rgba(62, 27, 74, 0.512);
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  position: relative;
+  top: 15rem;
+  left: 15rem;
+  text-align: center;
+  justify-self: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.root .Me #meAboutMe button span {
+  display: flex;
+  position: relative;
+  bottom: 1.1rem;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.root .Me #meAboutMe button:active {
+  transform: scale(0.9);
+}
+.root .Me #meAboutMeSpanish {
+  color: white;
+  width: 20rem;
+  height: 10rem;
+  font-size: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  padding-top: 1rem;
+  display: none;
+  text-shadow: 1px 1px 18px rgba(0, 0, 255, 0.692);
+  flex-direction: column;
+}
+.root .Me button {
+  border: 0;
+  height: 2rem;
+  width: 6rem;
+  background-color: rgba(62, 27, 74, 0.512);
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  position: relative;
+  top: 15.5rem;
+  left: 15rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.root .Me button span {
+  display: flex;
+  position: relative;
+  bottom: 1.1rem;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.root .Me button:active {
+  transform: scale(0.9);
+}
+.root .down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.root .down .left {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+}
+.root .down .left img {
+  width: 7.5rem;
+}
+.root .down .left a {
+  color: white;
+  text-shadow: 1px 1px 18px fuchsia;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.root .down .rigth {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+}
+.root .down .rigth img {
+  width: 7.5rem;
+}
+.root .down .rigth a {
+  color: white;
+  text-shadow: 1px 1px 18px fuchsia;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.root img[alt=astrounatLeft]:hover,
+.root img[alt=astrounatRigth]:hover,
+.root img[alt=meteoritoLeft]:hover,
+.root img[alt=meteoritoRigth]:hover {
+  filter: drop-shadow(0 0 20px gray);
+}
+
+@keyframes letters {
+  50% {
+    transform: rotateY(180deg);
+  }
+}/*# sourceMappingURL=principal.css.map */

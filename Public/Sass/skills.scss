@@ -1,0 +1,88 @@
+body{
+    margin: 0rem;
+}
+#root{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: black;
+    background-image: url(../assest/images/gif.webp);
+    background-position: center;
+    height: 100vh;
+//   place-content: center;
+    
+ 
+    header {
+        color: white;
+        display: flex;
+        box-shadow: 0px 10px 100px 20px rgba(255, 255, 255, 0.438);
+        height: 3rem;
+        justify-content: space-around;
+      
+        div{
+    
+          background-color: #4a678ed1;
+            width: 33rem;
+            height: 4rem;
+            a{
+              font-weight: bold;
+              display: flex;
+              color: black;
+              padding-top: 1rem;
+              justify-self:center;
+              align-self: center;
+            }
+        }
+        
+      }
+.estadisticas{
+    display: flex;
+ padding-top: 5rem;
+
+   align-items: center;
+//    padding-left: 10remºº;
+justify-content: center;
+    #skillG{
+        
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    .skills{
+        display: flex;
+     
+       
+        img{
+            width: 10rem;  
+        }
+    }
+ 
+    .logo{
+        width: 10rem;
+    }
+ 
+}
+
+#skillG:hover{
+  
+    .skills1,
+    .skills3{
+        // border: 1px solid red;
+        animation:skills1 10s infinite forwards ;
+    }
+    .skills2{
+        // border: 1px solid red;
+        animation:skills2 10s infinite forwards ;
+    }
+}
+    @keyframes skills1 {
+       50%{
+        transform: scale(0.1);
+       } 
+    }  
+    @keyframes skills2 {
+        50%{
+            transform: scale(2.0);
+           }   
+     } 
+}

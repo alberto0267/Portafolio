@@ -1,0 +1,134 @@
+body {
+  background-color: black;
+}
+body img[alt=ovni] {
+  width: 10rem;
+  display: flex;
+  position: relative;
+  top: 11rem;
+  opacity: 0;
+  animation: moveOvni 4s forwards;
+  animation-delay: 1s;
+}
+body .letters {
+  display: flex;
+  position: absolute;
+  top: 18rem;
+  left: 4rem;
+  color: white;
+  font-size: 5rem;
+  gap: 10rem;
+  justify-content: center;
+  text-shadow: 2px 2px 15px gray;
+}
+body .letters #l {
+  opacity: 0;
+  animation: letters forwards;
+  animation-delay: 1s;
+}
+body .letters #o {
+  opacity: 0;
+  animation: letters forwards;
+  animation-delay: 1.8s;
+}
+body .letters #a {
+  opacity: 0;
+  animation: letters forwards;
+  animation-delay: 2.5s;
+}
+body .letters #d {
+  opacity: 0;
+  animation: letters forwards;
+  animation-delay: 3s;
+}
+body .letters #i {
+  opacity: 0;
+  animation: letters forwards;
+  animation-delay: 3.4s;
+}
+body .letters #n {
+  opacity: 0;
+  animation: letters forwards;
+  animation-delay: 4.1s;
+}
+body .letters #g {
+  opacity: 0;
+  animation: letters forwards;
+  animation-delay: 5s;
+}
+body .conoceme {
+  display: flex;
+  position: relative;
+  top: 2rem;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 40rem;
+  opacity: 0;
+  justify-content: center;
+  animation: button 1s forwards;
+  animation-delay: 7s;
+}
+body .conoceme button {
+  display: flex;
+  width: 7rem;
+  height: 3rem;
+  justify-self: center;
+  align-self: center;
+  background-color: rgb(21, 21, 21);
+  border-radius: 10%;
+  box-shadow: 1px 1px 25px gray;
+}
+body .conoceme button a {
+  display: flex;
+  position: relative;
+  left: 0.6rem;
+  align-self: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #02AAD9;
+}
+
+@keyframes button {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes moveOvni {
+  28% {
+    opacity: 1;
+    transform: translateX(14rem);
+  }
+  41% {
+    opacity: 1;
+    transform: translateX(27rem);
+  }
+  56% {
+    opacity: 1;
+    transform: translateX(40.5rem);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(52rem);
+  }
+  84% {
+    opacity: 1;
+    transform: translateX(64rem);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateX(80rem);
+    display: none;
+  }
+}
+@keyframes letters {
+  33% {
+    opacity: 0.3;
+  }
+  66% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=index.css.map */
