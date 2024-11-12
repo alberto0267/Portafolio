@@ -13,6 +13,7 @@ meImg.addEventListener('click',()=>{
 
 
     console.log("entra");
+    console.log("%cEntra","font-weight:bold");
 
    if(!meAboutMeCLick  && meAboutMeCLickE){
     meAboutMe.style.display="flex";

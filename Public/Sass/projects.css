@@ -12,17 +12,20 @@ body {
   justify-content: space-around;
 }
 #root header div {
-  background-color: rgba(74, 103, 142, 0.8196078431);
+  background-color: rgba(39, 23, 183, 0.7098039216);
   width: 33rem;
   height: 4rem;
 }
 #root header div a {
   font-weight: bold;
   display: flex;
-  color: black;
+  color: rgb(217, 198, 198);
   padding-top: 1rem;
   justify-self: center;
   align-self: center;
+  text-decoration: none;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.02rem;
 }
 #root main {
   padding-top: 4rem;
@@ -93,9 +96,9 @@ body {
 }
 #root main .infoProjects button {
   border: 0;
-  height: 2rem;
-  width: 6rem;
-  background-color: rgb(229, 229, 229);
+  height: 2.2rem;
+  width: 6.5rem;
+  background-color: rgba(229, 229, 229, 0.774);
   border-radius: 1rem;
   color: white;
   display: flex;
@@ -104,7 +107,6 @@ body {
   top: 15.5rem;
   left: 15rem;
   font-size: 0.8rem;
-  text-align: center;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -116,6 +118,9 @@ body {
   padding: 16px 24px;
   border-radius: 6px;
   transition: 0.3s;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 #root main .infoProjects button:hover {
   box-shadow: 1px 1px 10px white;

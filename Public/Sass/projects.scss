@@ -14,18 +14,23 @@ body{
         height: 3rem;
         justify-content: space-around;
         // padding-top: 1rem;
+        // pos
         div{
-    
-          background-color: #4a678ed1;
+          // position: fixed;
+          background-color: #2717b7b5;
             width: 33rem;
             height: 4rem;
+    
             a{
               font-weight: bold;
               display: flex;
-              color: black;
+              color: rgb(217, 198, 198);
               padding-top: 1rem;
               justify-self:center;
               align-self: center;
+              text-decoration: none;
+              -webkit-text-stroke-color:black;
+  -webkit-text-stroke-width:0.02rem;
             }
         }
         
@@ -104,19 +109,20 @@ padding-top: 4rem;
             }
             button{
               border: 0;
-              height: 2rem;
-              width: 6rem;
-              background-color: rgb(229, 229, 229);
+              height: 2.2rem;
+              width: 6.5rem;
+              background-color: rgba(229, 229, 229, 0.774);
               border-radius: 1rem;
               color: white;
               display: flex;
+              // padding: 1rem;
               font-size: 18px;
               // padding: 7px;
               position: relative;
               top: 15.5rem;
               left: 15rem;
               font-size: 0.8rem; 
-              text-align: center;
+              // text-align: center;
               cursor: pointer;
               transition: .3s;
               a{
@@ -128,6 +134,9 @@ padding-top: 4rem;
                   padding: 16px 24px;
                   border-radius: 6px;
                 transition: .3s;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
                 }
              
               }

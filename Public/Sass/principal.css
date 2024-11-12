@@ -8,10 +8,11 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 .root .up {
+  padding-top: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,11 +27,12 @@ body {
 }
 .root .up .left a {
   color: white;
-  text-shadow: 1px 1px 18px fuchsia;
+  text-shadow: 0px 0px 15px rgb(255, 255, 255);
   text-decoration: none;
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-size: 1.3rem;
 }
 .root .up .rigth {
   display: grid;
@@ -41,11 +43,12 @@ body {
 }
 .root .up .rigth a {
   color: white;
-  text-shadow: 1px 1px 18px fuchsia;
+  text-shadow: 0px 0px 15px rgb(255, 255, 255);
   text-decoration: none;
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-size: 1.3rem;
 }
 .root .Me {
   display: flex;
@@ -62,7 +65,7 @@ body {
   align-self: center;
 }
 .root .Me #meAboutMe {
-  color: white;
+  color: rgba(255, 255, 255, 0.693);
   width: 20rem;
   height: 10rem;
   font-size: 1rem;
@@ -71,39 +74,41 @@ body {
   align-self: center;
   padding-top: 1rem;
   display: none;
-  text-shadow: 1px 1px 18px rgba(0, 0, 255, 0.692);
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: -1px -1px 3px rgba(222, 222, 222, 0.692);
   flex-direction: column;
+  gap: 2rem;
 }
 .root .Me #meAboutMe button {
   border: 0;
   height: 1.8rem;
   width: 5.5rem;
-  background-color: rgba(62, 27, 74, 0.512);
+  background-color: rgba(211, 56, 82, 0.512);
   border-radius: 1rem;
   color: white;
   display: flex;
   font-size: 18px;
   padding: 4px;
   position: relative;
-  top: 15rem;
+  top: 18.5rem;
   left: 15rem;
-  text-align: center;
-  justify-self: center;
   cursor: pointer;
   transition: 0.3s;
 }
 .root .Me #meAboutMe button span {
   display: flex;
+  font-weight: bold;
   position: relative;
   bottom: 1.1rem;
-  padding: 16px 24px;
+  padding: 20px 18px;
   border-radius: 6px;
   transition: 0.3s;
   font-size: 0.8rem;
   text-align: center;
-}
-.root .Me #meAboutMe button:active {
-  transform: scale(0.9);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.04rem;
 }
 .root .Me #meAboutMeSpanish {
   color: white;
@@ -120,33 +125,36 @@ body {
 }
 .root .Me button {
   border: 0;
-  height: 2rem;
-  width: 6rem;
-  background-color: rgba(62, 27, 74, 0.512);
+  height: 1.8rem;
+  width: 5.5rem;
+  background-color: rgba(211, 56, 82, 0.512);
   border-radius: 1rem;
   color: white;
   display: flex;
   font-size: 18px;
   padding: 4px;
   position: relative;
-  top: 15.5rem;
+  top: 16.3rem;
   left: 15rem;
-  font-size: 0.8rem;
   cursor: pointer;
-  transition: 0.3s;
 }
 .root .Me button span {
   display: flex;
+  font-weight: bold;
   position: relative;
   bottom: 1.1rem;
-  padding: 16px 24px;
+  padding: 20px 18px;
   border-radius: 6px;
   transition: 0.3s;
+  font-size: 0.8rem;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.04rem;
 }
 .root .Me button:active {
   transform: scale(0.9);
 }
 .root .down {
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -161,11 +169,12 @@ body {
 }
 .root .down .left a {
   color: white;
-  text-shadow: 1px 1px 18px fuchsia;
+  text-shadow: 1px 1px 18px rgb(255, 255, 255);
   text-decoration: none;
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-size: 1.3rem;
 }
 .root .down .rigth {
   display: flex;
@@ -177,11 +186,12 @@ body {
 }
 .root .down .rigth a {
   color: white;
-  text-shadow: 1px 1px 18px fuchsia;
+  text-shadow: 1px 1px 18px rgb(255, 255, 255);
   text-decoration: none;
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-size: 1.3rem;
 }
 .root img[alt=astrounatLeft]:hover,
 .root img[alt=astrounatRigth]:hover,
@@ -193,5 +203,15 @@ body {
 @keyframes letters {
   50% {
     transform: rotateY(180deg);
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }/*# sourceMappingURL=principal.css.map */

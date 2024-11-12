@@ -1,3 +1,5 @@
+@import "header";
+
 body {
   margin: 0rem;
 }
@@ -6,32 +8,10 @@ body {
   background-image: url(../assest/images/gif.webp);
         background-position: center;
   height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr 0fr;
+  // display: grid;
+  // grid-template-rows: auto 1fr 0fr;
 
-  header {
-    color: white;
-    display: flex;
-    box-shadow: 0px 10px 100px 20px rgba(255, 255, 255, 0.438);
-    height: 3rem;
-    justify-content: space-around;
-    // padding-top: 1rem;
-    div{
 
-      background-color: #4a678ed1;
-        width: 33rem;
-        height: 4rem;
-        a{
-          font-weight: bold;
-          display: flex;
-          color: black;
-          padding-top: 1rem;
-          justify-self:center;
-          align-self: center;
-        }
-    }
-    
-  }
 main{
 
 
@@ -46,22 +26,23 @@ main{
   }
   .section {
     display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+    gap: 24px;
+    align-items: stretch;
+    justify-content: space-around;
+    padding-top: 4rem;
     
   }
   
   .form {
-    top: 2rem;
+    top: 5rem;
     right: 15rem;
-    position: relative;
+    // position: relative;
     width: 30rem;
-    background-color: #ffffff72;
+    background-color: #ffffff87;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 10px 4px 12px gray;
-  
+
   }
   
   form {
@@ -141,9 +122,9 @@ main{
 .contacts{
   display: flex;
   padding-top: 1rem;
-  position: relative;
-  left: 85rem;
-  gap: 2rem;
+  // position: relative;
+  // left: 85rem;
+  // gap: 2rem;
   width: 1rem;
   img{
     width: 2.5rem;
@@ -152,6 +133,60 @@ main{
 }
 
   }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1rem;
+    display: flex;
+    // overflow: hidden;
+    // flex-direction: row-reverse;
+    // flex-direction: column;
+    width: auto;
+    height: auto;
+    .section {
+      box-sizing: border-box;
+      justify-self: center;
+      justify-self: center;
+      // position: absolute;
+      // padding-left: 15rem;
+      .form{
+        width: 15rem!important;
+      }
+      input[type="text"],
+      textarea {
+        width: 10rem!important;
+   
+       
+      }
+      
+    .contactsImg  {
+      // box-shadow: 10px 4px 12px gray;
+    img{
+      position: absolute;
+      width: 4rem;
+      right: 5rem;
+      top: 10rem;
+    }  
+    }
+  
+    }
+    .contacts{
+      display: flex;
+      flex-direction: row;
+      // background-color: aqua;
+     position: relative;
+     top: 38rem;
+     right: 19rem;
+     height: 1.5rem;
+      img{
+        width: 1rem;
+       
+      }
+    }
+  }
+
+
 
 
 }
