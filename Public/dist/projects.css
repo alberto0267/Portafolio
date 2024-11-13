@@ -1,0 +1,210 @@
+body {
+  margin: 0rem;
+  background-image: url(../assest/images/gif.webp);
+  background-position: center;
+}
+
+#root header {
+  color: white;
+  display: flex;
+  box-shadow: 0px 10px 100px 20px rgba(255, 255, 255, 0.438);
+  height: 3rem;
+  justify-content: space-around;
+}
+
+#root header div {
+  background-color: rgba(39, 23, 183, 0.7098039216);
+  width: 33rem;
+  height: 4rem;
+}
+
+#root header div a {
+  font-weight: bold;
+  display: flex;
+  color: rgb(217, 198, 198);
+  padding-top: 1rem;
+  justify-self: center;
+  align-self: center;
+  text-decoration: none;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.02rem;
+}
+
+#root main {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  justify-self: center;
+}
+
+#root main .projects {
+  display: flex;
+  width: 70rem;
+  height: 38rem;
+  gap: 4rem;
+  border-bottom: 1px solid white;
+}
+
+#root main .projects .gif {
+  margin-left: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  background-image: url(../assest/images/projects1.gif);
+  background-position: center;
+  background-size: cover;
+  width: 38rem;
+  height: 30rem;
+}
+
+#root main .projects .gif2 {
+  background-image: url(../assest/images/ProjectsMercedes.gif);
+  background-position: center;
+  background-size: cover;
+  width: 44rem;
+  height: 30rem;
+}
+
+#root main .projects .gif3 {
+  background-image: url(../assest/images/projects3\ \(1\).gif);
+  background-position: center;
+  background-size: cover;
+  width: 44rem;
+  height: 30rem;
+}
+
+#root main .projects .gif0 {
+  margin-left: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  background-image: url(../assest/images/projesct4.gif);
+  background-position: center;
+  background-size: cover;
+  width: 38rem;
+  height: 30rem;
+}
+
+#root main .infoProjects {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 18px rgba(0, 0, 255, 0.692);
+}
+
+#root main .infoProjects h2 {
+  text-align: center;
+}
+
+#root main .infoProjects p {
+  display: flex;
+  position: relative;
+  top: 2rem;
+}
+
+#root main .infoProjects img[alt=EstadisticasAppDIa] {
+  text-align: center;
+  display: flex;
+  position: relative;
+  top: 5rem;
+}
+
+#root main .infoProjects button {
+  border: 0;
+  height: 2.2rem;
+  width: 6.5rem;
+  background-color: rgba(229, 229, 229, 0.774);
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 18rem;
+  margin-left: 8.5rem;
+  font-size: 18px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#root main .infoProjects button a {
+  text-align: center;
+  display: flex;
+  position: relative;
+  bottom: 1.1rem;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#root main .infoProjects button:hover {
+  box-shadow: 1px 1px 10px white;
+  transition: 0.3s;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+footer .imgFooter {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+footer p {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  #root {
+    box-sizing: border-box;
+  }
+  #root main {
+    box-sizing: border-box;
+    display: flex;
+    width: 1rem;
+    width: auto;
+    height: auto;
+  }
+  #root main .projects {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+  }
+  #root main .projects .gif {
+    width: 0rem;
+    height: 0rem;
+  }
+  #root main .infoProjects {
+    gap: 0rem;
+    padding-top: 0rem;
+    text-align: center;
+  }
+  #root main .infoProjects img {
+    width: 20rem;
+    display: flex;
+    justify-self: center;
+  }
+  #root main .infoProjects button {
+    margin-left: 5rem;
+    margin-top: 10rem;
+    animation: botton 2s infinite;
+  }
+  @keyframes botton {
+    to {
+      box-shadow: 5px 5px 10px gray;
+    }
+    from {
+      box-shadow: 5px 5px 20px whitesmoke;
+    }
+  }
+} 
+
+/*# sourceMappingURL=projects.css.map */

@@ -1,0 +1,27 @@
+header {
+  color: white;
+  display: flex;
+  box-shadow: 0px 10px 100px 20px rgba(255, 255, 255, 0.438);
+  height: 3rem;
+  justify-content: space-around;
+}
+
+header div {
+  background-color: rgba(39, 23, 183, 0.7098039216);
+  width: 33rem;
+  height: 4rem;
+}
+
+header div a {
+  font-weight: bold;
+  display: flex;
+  color: rgb(217, 198, 198);
+  padding-top: 1rem;
+  justify-self: center;
+  align-self: center;
+  text-decoration: none;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.02rem;
+} 
+
+/*# sourceMappingURL=header.css.map */
