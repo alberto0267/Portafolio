@@ -71,4 +71,28 @@ body {
   50% {
     transform: scale(2);
   }
+}
+
+@media (max-width: 480px) {
+  #root {
+    background-color: aqua;
+  }
+  #root header {
+    display: flex;
+    flex-direction: row;
+    width: 24.4rem;
+  }
+  #root #skillG .logo {
+    display: flex;
+    width: 8rem;
+    animation: grow 1s 3 ease-in;
+  }
+  @keyframes grow {
+    to {
+      transform: scale(1, 0);
+    }
+    from {
+      transform: scale(0, 1);
+    }
+  }
 }/*# sourceMappingURL=skills.css.map */

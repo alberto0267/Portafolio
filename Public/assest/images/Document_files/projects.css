@@ -156,36 +156,19 @@ footer p {
     height: auto;
   }
   #root main .projects {
-    width: 20rem;
+    height: 48rem;
+    width: 24rem;
     display: flex;
     flex-direction: column;
     padding-bottom: 4rem;
   }
   #root main .projects .gif {
-    width: 0rem;
-    height: 0rem;
+    width: 24rem;
   }
-  #root main .infoProjects {
+  #root main .projects .infoProjects {
     gap: 0rem;
     padding-top: 0rem;
     text-align: center;
-  }
-  #root main .infoProjects img {
-    width: 20rem;
-    display: flex;
-    justify-self: center;
-  }
-  #root main .infoProjects button {
-    margin-left: 5rem;
-    margin-top: 10rem;
-    animation: botton 2s infinite;
-  }
-  @keyframes botton {
-    to {
-      box-shadow: 5px 5px 10px gray;
-    }
-    from {
-      box-shadow: 5px 5px 20px whitesmoke;
-    }
+    background-color: rgb(255, 0, 93);
   }
 }/*# sourceMappingURL=projects.css.map */
