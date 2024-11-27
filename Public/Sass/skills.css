@@ -49,8 +49,20 @@ body {
 #root .estadisticas .skills {
   display: flex;
 }
-#root .estadisticas .skills img {
+#root .estadisticas .skills img[alt=js] {
+  width: 14rem;
+  position: relative;
+  top: 0.4rem;
+}
+#root .estadisticas .skills img[alt=html] {
   width: 10rem;
+  position: relative;
+  top: 0.4rem;
+}
+#root .estadisticas .skills img[alt=ccs] {
+  width: 10rem;
+  position: relative;
+  bottom: 0.9rem;
 }
 #root .estadisticas .logo {
   width: 10rem;

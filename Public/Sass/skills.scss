@@ -54,9 +54,27 @@ justify-content: center;
         display: flex;
      
        
-        img{
-            width: 10rem;  
+        img[alt="js"]{
+// background-color: aqua;
+width: 14rem;
+position: relative;
+top: .4rem;
         }
+        img[alt="html"]{
+            // background-color: aqua;
+            width: 10rem;
+            position: relative;
+            top: .4rem;
+                    }
+                    img[alt="ccs"]{
+                        // background-color: aqua;
+                        width: 10rem;
+                        position: relative;
+                        bottom:.9rem;
+                                }
+                    // img{
+        //     width: 12rem;  
+        // }
     }
  
     .logo{

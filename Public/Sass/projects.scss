@@ -100,6 +100,7 @@ padding-top: 4rem;
               display: flex;
               position: relative;
               top: 2rem;
+              font-size: 1.5rem;
             }
             img[alt="EstadisticasAppDIa"]{
                 text-align: center;
@@ -109,16 +110,17 @@ padding-top: 4rem;
             }
             button{
               border: 0;
-              height: 2.2rem;
-              width: 6.5rem;
+              height: 3.5rem;
+              width: 8.3rem;
               background-color: rgba(229, 229, 229, 0.774);
               border-radius: 1rem;
               color: white;
               display: flex;
               flex-direction: column;
-             margin-top: 18rem;
+             margin-top: 15rem;
              margin-left: 8.5rem;
-              font-size: 18px;
+              font-size: 25px;
+              // background-color: aqua;
               // padding: 7px;
               // position: relative;
               // top: 15.5rem;
@@ -139,6 +141,7 @@ padding-top: 4rem;
                 text-decoration: none;
                 color: black;
                 font-weight: bold;
+                font-size: 1.2rem;
                 }
              
               }
@@ -203,6 +206,7 @@ footer{
       gap: 0rem;
       padding-top: 0rem;
       text-align: center;
+      // font-size: 4rem;
       // background-color: rgb(26, 5, 186);
       img{
         width: 20rem;
@@ -214,6 +218,9 @@ footer{
         margin-left: 5rem;
         margin-top: 10rem;
         animation: botton 2s  infinite ;
+      }
+      p{
+       
       }
      }
      }
