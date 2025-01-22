@@ -1,0 +1,16 @@
+{
+  "name": "mi-portafolio",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "sass ./Public/Sass:./dist/css --no-source-map",
+    "start": "node server/server.js"
+  },
+  "devDependencies": {
+    "sass": "^1.83.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^6.9.16"
+  }
+}

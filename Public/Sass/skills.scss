@@ -1,139 +1,133 @@
-@import "header";
+@use "header";
 
-body{
-    margin: 0rem;
+body {
+  margin: 0rem;
 }
-#root{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    background-color: black;
-    background-image: url(../assest/images/gif.webp);
-    background-position: center;
-    height: 100vh;
-//   place-content: center;
-    
- 
-    // header {
-    //     color: white;
-    //     display: flex;
-    //     box-shadow: 0px 10px 100px 20px rgba(255, 255, 255, 0.438);
-    //     height: 3rem;
-    //     justify-content: space-around;
-      
-    //     div{
-    
-    //       background-color: #4a678ed1;
-    //         width: 33rem;
-    //         height: 4rem;
-    //         a{
-    //           font-weight: bold;
-    //           display: flex;
-    //           color: black;
-    //           padding-top: 1rem;
-    //           justify-self:center;
-    //           align-self: center;
-    //         }
-    //     }
-        
-    //   }
-.estadisticas{
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: black;
+  background-image: url(../assest/images/gif.webp);
+  background-position: center;
+  height: 100vh;
+  //   place-content: center;
+
+  // header {
+  //     color: white;
+  //     display: flex;
+  //     box-shadow: 0px 10px 100px 20px rgba(255, 255, 255, 0.438);
+  //     height: 3rem;
+  //     justify-content: space-around;
+
+  //     div{
+
+  //       background-color: #4a678ed1;
+  //         width: 33rem;
+  //         height: 4rem;
+  //         a{
+  //           font-weight: bold;
+  //           display: flex;
+  //           color: black;
+  //           padding-top: 1rem;
+  //           justify-self:center;
+  //           align-self: center;
+  //         }
+  //     }
+
+  //   }
+  .estadisticas {
     display: flex;
- padding-top: 5rem;
+    padding-top: 5rem;
 
-   align-items: center;
-//    padding-left: 10remºº;
-justify-content: center;
-    #skillG{
-        
-        gap: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;    
+    align-items: center;
+    //    padding-left: 10remºº;
+    justify-content: center;
+    #skillG {
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .skills{
-        display: flex;
-     
-       
-        img[alt="js"]{
-// background-color: aqua;
-width: 14rem;
-position: relative;
-top: .4rem;
-        }
-        img[alt="html"]{
-            // background-color: aqua;
-            width: 10rem;
-            position: relative;
-            top: .4rem;
-                    }
-                    img[alt="ccs"]{
-                        // background-color: aqua;
-                        width: 10rem;
-                        position: relative;
-                        bottom:.9rem;
-                                }
-                    // img{
-        //     width: 12rem;  
-        // }
-    }
- 
-    .logo{
+    .skills {
+      display: flex;
+
+      img[alt="js"] {
+        // background-color: aqua;
+        width: 14rem;
+        position: relative;
+        top: 0.4rem;
+      }
+      img[alt="html"] {
+        // background-color: aqua;
         width: 10rem;
+        position: relative;
+        top: 0.4rem;
+      }
+      img[alt="ccs"] {
+        // background-color: aqua;
+        width: 10rem;
+        position: relative;
+        bottom: 0.9rem;
+      }
+      // img{
+      //     width: 12rem;
+      // }
     }
- 
-}
 
-#skillG:hover{
-  
+    .logo {
+      width: 10rem;
+    }
+  }
+
+  #skillG:hover {
     .skills1,
-    .skills3{
-        // border: 1px solid red;
-        animation:skills1 10s infinite forwards ;
+    .skills3 {
+      // border: 1px solid red;
+      animation: skills1 10s infinite forwards;
     }
-    .skills2{
-        // border: 1px solid red;
-        animation:skills2 10s infinite forwards ;
+    .skills2 {
+      // border: 1px solid red;
+      animation: skills2 10s infinite forwards;
     }
-}
-    @keyframes skills1 {
-       50%{
-        transform: scale(0.1);
-       } 
-    }  
-    @keyframes skills2 {
-        50%{
-            transform: scale(2.0);
-           }   
-     } 
+  }
+  @keyframes skills1 {
+    50% {
+      transform: scale(0.1);
+    }
+  }
+  @keyframes skills2 {
+    50% {
+      transform: scale(2);
+    }
+  }
 }
 
 @media (max-width: 480px) {
-    #root{
-        background-color: aqua;
-        // display: flex;
+  #root {
+    background-color: aqua;
+    // display: flex;
 
-        header{
-            display: flex;
-            flex-direction: row;
-            width: 24.4rem;
-        }
-        #skillG{
-            // width: 2rem;
+    header {
+      display: flex;
+      flex-direction: row;
+      width: 24.4rem;
+    }
+    #skillG {
+      // width: 2rem;
 
-            .logo{
-                display: flex;          
-                width: 8rem;
-                animation: grow 1s 3 ease-in;
-            }
-        }
-      }
-      @keyframes grow {
-        to{
-            transform: scale(1,0);
-        }
-        from{
-            transform: scale(0,1);
-        }
-        
+      .logo {
+        display: flex;
+        width: 8rem;
+        animation: grow 1s 3 ease-in;
       }
     }
+  }
+  @keyframes grow {
+    to {
+      transform: scale(1, 0);
+    }
+    from {
+      transform: scale(0, 1);
+    }
+  }
+}
